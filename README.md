@@ -1,7 +1,7 @@
 # goose
 ## Simplify Your Environment Variable Management
 ### What is goose?
-**goose** is your solution to managing environment variables effortlessly, making it ideal for developers who work across multiple languages and libraries on the same machine. If you've ever found yourself frustrated by the need to constantly rename or recreate environment variables due to updates or conflicting versions, goose is here to save the day.
+**goose** is your solution to managing environment or PATH variables effortlessly, making it ideal for developers who work across multiple languages and libraries on the same machine. If you've ever found yourself frustrated by the need to constantly rename or recreate environment variables due to updates or conflicting versions, goose is here to save the day.
 
 With goose, you can streamline the process, ensuring that your development environment is always set up exactly the way you need it, without the headaches.
 
