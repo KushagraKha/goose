@@ -54,6 +54,6 @@ goose python39 -m my_script.py
 ```
 
 ### Getting Started
-Clone the repository.
-Ensure Python is installed on your system.
+Clone the repository.  
+Ensure Python is installed on your system.  
 Add goose to your environment variables to use it globally.
