@@ -24,8 +24,8 @@ Use the following command to link an executable to a command name:
 ```
 goose -f <path-to-executable> -n <command-name>
 ```
-- **<path-to-executable>**: The absolute path to the executable you want to add.
-- **<command-name>**: The name you want to assign to this command for future use.
+- **`<path-to-executable>`**: The absolute path to the executable you want to add.
+- **`<command-name>`**: The name you want to assign to this command for future use.
 
 2. **Run Your Command**:
 Once added, you can execute the command from anywhere in your terminal by typing:
