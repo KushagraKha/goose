@@ -21,7 +21,7 @@ Setting up goose is simple:
 
 1. **Add an Executable to goose**:
 Use the following command to link an executable to a command name:
-```bash
+```
 goose -f <path-to-executable> -n <command-name>
 ```
 - **<path-to-executable>**: The absolute path to the executable you want to add.
@@ -30,26 +30,26 @@ goose -f <path-to-executable> -n <command-name>
 2. **Run Your Command**:
 Once added, you can execute the command from anywhere in your terminal by typing:
 
-```bash
-goose <command-name
+```
+goose <command-name>
 ```
 
 ### Example Use Case
 Imagine you have multiple versions of Python installed on your machine. With goose, you can easily switch between them without constantly modifying your system's environment variables. Just add each version using a unique command name:
 
-```bash
+```
 goose -f /path/to/python3.8 -n python38
 goose -f /path/to/python3.9 -n python39
 ```
 
 Now, whenever you need to run Python 3.8 or Python 3.9, you can simply use:
 
-```bash
+```
 goose python38 -m my_script.py
 ```
 or
 
-```bash
+```
 goose python39 -m my_script.py
 ```
 
