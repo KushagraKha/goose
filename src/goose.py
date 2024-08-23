@@ -20,9 +20,20 @@ def save_config(config):
 # Add a new command to the config
 def add_command(path, name):
     config = load_config()
-    config[name] = path
-    save_config(config)
-    print(f"Command '{name}' added with path '{path}'.")
+    if name in config:
+        print(f"Command '{name}' already exists in goose.")
+        overwrite = input("Would you like to overwrite it? (Y/N): ").strip().lower()
+        if overwrite == 'y':
+            config[name] = path
+            save_config(config)
+            print(f"Command '{name}' has been overwritten with path '{path}'.")
+        else:
+            print("Please choose a different name.")
+            sys.exit(1)
+    else:
+        config[name] = path
+        save_config(config)
+        print(f"Command '{name}' added with path '{path}'.")
 
 # Execute the command
 def run_command(name, *args):
