@@ -19,6 +19,10 @@ def save_config(config):
 
 # Add a new command to the config
 def add_command(path, name):
+    if not os.path.isabs(path):
+        print("Error: The path must be absolute. Please provide an absolute path.")
+        sys.exit(1)
+    
     config = load_config()
     if name in config:
         print(f"Command '{name}' already exists in goose.")
