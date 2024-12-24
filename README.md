@@ -1,9 +1,7 @@
 # goose
 ## Simplify Your Environment Variable Management
 ### What is goose?
-**goose** is your solution to managing environment or PATH variables effortlessly, making it ideal for developers who work across multiple languages and libraries on the same machine. If you've ever found yourself frustrated by the need to constantly rename or recreate environment variables due to updates or conflicting versions, goose is here to save the day.
-
-With goose, you can streamline the process, ensuring that your development environment is always set up exactly the way you need it, without the headaches.
+**goose** is an environment and PATH management tool intended to streamline the process of setting up and managing PATH variables. This tool will be most helpful for beginners until they become more familiar with PATH editing and management.  
 
 ### Key Features
 
@@ -11,13 +9,7 @@ With goose, you can streamline the process, ensuring that your development envir
 - **Effortless Execution**: Call your executables from the command line without worrying about environment paths.
 - **Version Control Friendly**: Easily switch between different versions of tools or languages without adjusting your environment variables.
 
-### Why the need for goose?
-
-Managing environment variables can be a tedious and error-prone task, especially when working with multiple languages and tools. goose eliminates that hassle, allowing you to focus on what really matters—your code. Whether you're a developer, data scientist, or systems administrator, **goose** is designed to make your workflow more efficient.
-
-### How It Works
-
-Setting up goose is simple:
+### Commands and setup
 
 1. **Add an Executable to goose**:
 Use the following command to link an executable to a command name:
@@ -35,7 +27,7 @@ goose <command-name>
 ```
 
 ### Example Use Case
-Imagine you have multiple versions of Python installed on your machine. With goose, you can easily switch between them without constantly modifying your system's environment variables. Just add each version using a unique command name:
+Imagine you have multiple versions of Python installed on your machine. With goose, you can easily switch between them without constantly modifying your system's environment variable order. Just add each version using a unique command name:
 
 ```
 goose -f /path/to/python3.8 -n python38
