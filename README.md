@@ -46,6 +46,4 @@ goose python39 -m my_script.py
 ```
 
 ### Getting Started
-Clone the repository.  
-Ensure Python is installed on your system.  
-Add goose to your environment variables to use it globally.
+goose comes with the executable and an installer for Windows. Simply run the Installer as admin and then restart your computer to be able to use it through the command line. Alternatively, you can try to compile locally using the goose.py file.
