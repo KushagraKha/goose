@@ -46,4 +46,4 @@ goose python39 -m my_script.py
 ```
 
 ### Getting Started
-goose comes with the executable and an installer for Windows. Simply run the Installer as admin and then restart your computer to be able to use it through the command line. Alternatively, you can try to compile locally using the goose.py file.
+goose comes with the executable (located inside the dist folder) and an installer for Windows (located inside the Output folder). Simply run the Installer as admin and then restart your computer to be able to use it through the command line. Alternatively, you can try to compile locally using the goose.py file.
