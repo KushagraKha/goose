@@ -2,10 +2,8 @@ import os
 import sys
 import json
 
-# Define the location where goose will store its data
 GOOSE_CONFIG_PATH = "goose_config.json"
 
-# Load or initialize the configuration
 def load_config():
     if os.path.exists(GOOSE_CONFIG_PATH):
         with open(GOOSE_CONFIG_PATH, "r") as file:
@@ -17,7 +15,7 @@ def save_config(config):
     with open(GOOSE_CONFIG_PATH, "w") as file:
         json.dump(config, file)
 
-# Add a new command to the config
+
 def add_command(path, name):
     if not os.path.isabs(path):
         print("Error: The path must be absolute. Please provide an absolute path.")
@@ -39,7 +37,7 @@ def add_command(path, name):
         save_config(config)
         print(f"Command '{name}' added with path '{path}'.")
 
-# Execute the command
+
 def run_command(name, *args):
     config = load_config()
     if name in config:
@@ -48,8 +46,12 @@ def run_command(name, *args):
     else:
         print(f"Command '{name}' not found in goose. Please add it first.")
 
-# Main function to handle arguments
+
 def run():
+    if len(sys.argv) > 1 and sys.argv[1] in ("--v", "--version"):
+        print("1.0")
+        sys.exit(0)
+
     if len(sys.argv) < 2:
         print("Usage: goose -f <path_to_executable> -n <command_name>")
         print("       goose <command_name> [args...]")
